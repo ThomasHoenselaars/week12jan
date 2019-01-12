@@ -30,12 +30,175 @@ img {
 body {
     margin: 0;
     display: grid;
+    
 }
 
 .header {
-    /* background: var(--black); */
+    background: var(--black);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    
+    
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.nav-main a {
+    color: white;
+    
 }
 
 .logo img {
     height: 2rem;
 }
+
+.magnifying-glass {
+    font-size: 1.5em;
+    display: inline-block;
+    width: 0.4em;
+    box-sizing: content-box;
+    height: 0.4em;
+    border: 0.1em solid white;
+    position: relative;
+    border-radius: 0.35em;
+  }
+.magnifying-glass:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.25em;
+    bottom: -0.1em;
+    border-width: 0;
+    background: white;
+    width: 0.35em;
+    height: 0.08em;
+    transform: rotate(45deg);
+  }
+
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.hero{
+    width: 100%;
+    margin-top: 68px;
+    
+  }
+  
+.block {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+.featured-products {
+    grid-column: 2;
+}
+
+.featured-videos {
+    grid-column: 2;
+}
+
+.products-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.product-caption {
+    line-height: 1.6;
+}
+  
+.footer {
+    text-align: center;
+    background: var(--grey);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.footer-title {
+    font-size: 30px;
+    font-weight: 100;   
+}
+
+.socialmedia-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia-nav li {
+    margin: 1rem;
+}
+
+.socialmedia-nav .twitter {
+    background: url(https://www.pathe.nl/assets/img/icons/social/twitter@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.socialmedia-nav .fb {
+    background: url(https://www.pathe.nl/assets/img/icons/social/facebook@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.socialmedia-nav .insta {
+    background: url(https://www.pathe.nl/assets/img/icons/social/instagram@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.copyright {
+    font-size: 10px;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+   
+}
+
+.footer-links li {
+    margin: 0 .2rem 0 .2rem;
+}
+
+.footer a {
+    color: var(--black);
+}
+
+.footer a:hover {
+    cursor: pointer;
+    color: #1779ba;
+}
+
+.extra-link {
+    font-size: 10px;
+   
+}
+
