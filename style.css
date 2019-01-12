@@ -138,10 +138,14 @@ body {
                 color: grey;
             }
 
+            .listadd-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
            .plus {
-               position: absolute;
-               left: 16rem;
-               color: darkred;
+               color: red;
                font-size: 18px;
            }
 
