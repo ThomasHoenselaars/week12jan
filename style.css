@@ -92,6 +92,10 @@ body {
     
 }
 
+.hamburger {
+    display: none;
+}
+
     .dropdown {
         display: none;
         position: absolute;
@@ -316,3 +320,23 @@ main {
    
 }
 
+@media screen and (max-width: 600px) {
+
+   .nav-main li:nth-child(n+3) { 
+       display: none;
+    }
+
+    .nav-main {
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        width: 2rem;
+        margin-left: 1rem;
+        position: absolute;
+        left: 0;
+       
+    }
+
+}
