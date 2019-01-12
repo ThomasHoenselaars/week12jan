@@ -96,7 +96,7 @@ body {
         display: none;
         position: absolute;
         background: var(--black);
-        padding: 1rem;
+        padding: 1rem 0 1rem 0;
         width: 18rem;  
         
        
@@ -125,7 +125,7 @@ body {
             display: none;
             position: absolute;
             left: 18rem;
-            bottom: 4rem;
+            bottom: 4.2rem;
             background: black;
             width: 16rem;
         }
