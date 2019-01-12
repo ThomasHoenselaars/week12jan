@@ -97,12 +97,23 @@ body {
         position: absolute;
         background: var(--black);
         padding: 1rem;
-        width: 12rem;  
+        width: 18rem;  
+        
        
     }
         .dropdown li {
             padding: 1rem;
-              
+            
+        }
+
+        .dropdown a {
+            display: block;
+            font-size: 13px;
+            text-transform: none;
+        }
+
+        .dropdown a:hover {
+            color: grey;
         }
 
             .dropdown-products:hover > ul {
@@ -110,6 +121,29 @@ body {
                 cursor: pointer;  
             }
 
+        .dropdown-two {
+            display: none;
+            position: absolute;
+            left: 18rem;
+            bottom: 4rem;
+            background: black;
+            width: 16rem;
+        }
+
+            .dropdown-two a {
+                display: block;
+            }
+
+            .dropdown-two a:hover {
+                color: grey;
+            }
+
+           .plus {
+               position: absolute;
+               left: 16rem;
+               color: darkred;
+               font-size: 18px;
+           }
 
 main {
     width: 100%;
