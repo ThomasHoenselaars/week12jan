@@ -33,6 +33,7 @@ body {
     
 }
 
+
 .header {
     background: var(--black);
     position: fixed;
@@ -87,13 +88,7 @@ body {
   }
 
 .nav-main-items {
-    position: relative;
-    
-    
-}
-
-.hamburger {
-    display: none;
+    position: relative;  
 }
 
     .dropdown {
@@ -152,6 +147,54 @@ body {
                color: red;
                font-size: 18px;
            }
+
+/* MOBILE MENU DROPDOWN START */
+.hamburger {
+    display: none;
+    }
+        
+        .mobile-menu {
+            display: none;
+        }
+        
+        input[type=checkbox] {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+         }
+         
+         /* Toggled State */
+         input[type=checkbox]:checked ~ .mobile-menu {
+            display: block;
+            
+            width: 100%;
+            height: 20rem;
+         } 
+        
+         .mobile-menu-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+            letter-spacing: 3px;
+            height: 100%;
+            
+        }
+        
+        .mobile-menu-list a {
+            color: white;
+            
+        }
+        
+        .mobile-menu-list a:hover {
+            color: grey;
+            cursor: pointer;
+            
+        }
+/* MOBILE MENU DROPDOWN END */
 
 main {
     width: 100%;
@@ -320,7 +363,7 @@ main {
    
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
    .nav-main li:nth-child(n+3) { 
        display: none;
@@ -336,7 +379,28 @@ main {
         margin-left: 1rem;
         position: absolute;
         left: 0;
-       
+        
     }
 
+    .hamburger-link {
+        cursor: pointer;
+    }
+
+
+
 }
+
+@media screen and (min-width: 1000px) {
+    .mobile-menu-list {
+        display: none;
+    }
+
+    input[type=checkbox]:checked ~ .mobile-menu {
+        display: none;
+        
+        width: 100%;
+        height: 20rem;
+     } 
+}
+
+
