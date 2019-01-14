@@ -222,9 +222,6 @@ main {
 }
 
 
-.product a {
-    /* display: block; */
-}
 .product-img {
     position: relative;
     display: grid;
@@ -258,9 +255,9 @@ main {
   
     height: 1.4em;
     width: 3em;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     
     padding: 0;
     cursor: pointer;
