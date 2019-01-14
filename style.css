@@ -223,29 +223,39 @@ main {
 
 
 .product a {
-    display: block;
+    /* display: block; */
 }
 .product-img {
     position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
    
 }
 
+.product-img img {
+    grid-row: 1;
+    grid-column: 1;
+}
+
 .video-btn {
+    grid-row: 1;
+    grid-column: 1;
     color: white;
     z-index: 2;
-    position: absolute;
+    /* position: absolute; */
 
     height: 100%;
     width: 100%;
 
-    top: 50%;
+    /* top: 50%;
     left: 50%;
     margin-left: -3.5rem;
-    margin-top: -2rem;
+    margin-top: -2rem; */
     
 
     font-size: 2em;
-    /* line-height: 1.5em; */
+  
     height: 1.4em;
     width: 3em;
     display: flex;
