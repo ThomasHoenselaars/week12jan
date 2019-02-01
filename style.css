@@ -237,6 +237,7 @@ main {
 
 
 .product-img {
+    height: 20rem;
     position: relative;
     display: grid;
     justify-items: center;
